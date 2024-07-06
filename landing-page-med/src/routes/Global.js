@@ -19,8 +19,8 @@ function Global() {
 const Layout = ({children}) => (
     <>
         <Header />
-        <InformacionUsuario />
         {children}
+        <InformacionUsuario />
     </>
 );
 

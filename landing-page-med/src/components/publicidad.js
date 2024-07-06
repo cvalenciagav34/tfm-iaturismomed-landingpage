@@ -7,15 +7,13 @@ export const Publicidad = ({id, titulo, imagen,horarios, ubicacion}) => {
 
 
     return (
-        <div className="card" style={{width: '18rem'}}>
-        <img src="..." className="card-img-top" alt="..."/>
+        <div className="card" style={{width: '18rem'}}>        
+        <img src= {imagen} className="card-img-top" alt="..."/>
             <div className="card-body">
-                <div className='row'>
+                <div className='col'>
                 <h5 className="card-title">{titulo}</h5>
-                </div> 
-                <div className='row'>
-                <p className="card-text">{horarios}</p>
-                </div>           
+                <br></br><p className="card-text">{horarios}</p>
+                </div>    
             </div>
         </div>
     );

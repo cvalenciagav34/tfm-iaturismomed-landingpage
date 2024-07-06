@@ -4,6 +4,7 @@ import {useHistoria} from "./hooks/useHistoria";
 import {useParches } from './hooks/useParches';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Landing } from "./views/Landing";
+import Global from "./routes/Global";
 
 function App() {
 
@@ -16,13 +17,7 @@ function App() {
   };
   return (
       <ContextApp.Provider value={{historia,parches,darkMode,handleDarkMode}}>
-      <BrowserRouter>
-      <div>
-      <Routes>
-      <Route path="/" element={<Landing />} />
-      </Routes>
-      </div>
-      </BrowserRouter>
+        <Global></Global>
       </ContextApp.Provider>
   );
 }

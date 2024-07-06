@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {ModalComponent} from './ModalComponent';
 import "../styles/stylesChatbot.css";
+import chatbot from "../images/Chatbot_img.png";
 
  export const InformacionUsuario = () => {
 
@@ -11,6 +12,7 @@ import "../styles/stylesChatbot.css";
     return (
         <div>
             <div className="chatbot">
+            <img className="card__img" src={chatbot}   alt="Imagen"/>
                 <div className = "button">
                     <button type="button" className="btn btn-secondary" onClick={handleShow}>Chatbot</button>
                 </div>

@@ -7,17 +7,15 @@ export const Publicidad = ({id, titulo, imagen,horarios, ubicacion}) => {
 
 
     return (
-        <div className="">
-            
-            <div className = {`card ${darkMode ? 'card darkeMode' : ''}`}>
-                <h3>{titulo}</h3>
-                <img className="card__img" src= {imagen}  alt="Imagen"/>
-                <div className = "row">
-                <div className = "col">
-                <p><b>Horarios:</b> {horarios}</p>
-                <p><b>Ubicación</b> {ubicacion}</p>
-                </div>
-            </div>
+        <div className="card" style={{width: '18rem'}}>
+        <img src="..." className="card-img-top" alt="..."/>
+            <div className="card-body">
+                <div className='row'>
+                <h5 className="card-title">{titulo}</h5>
+                </div> 
+                <div className='row'>
+                <p className="card-text">{horarios}</p>
+                </div>           
             </div>
         </div>
     );

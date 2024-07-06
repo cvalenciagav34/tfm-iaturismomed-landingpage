@@ -8,7 +8,7 @@ export const Landing = () =>{
   const { historia } = useContext(ContextApp);
 
     return (
-        <div className="container">
+        <div>
                 <PublicidadList
                     publicidadList = {parches}
                     tittle = "Parches Medellin"

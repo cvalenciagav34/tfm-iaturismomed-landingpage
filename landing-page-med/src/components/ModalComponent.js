@@ -23,7 +23,7 @@ export const ModalComponent=(values) => {
                 <Chatbot
                     number = {values.number}
                 />
-                <p className={`${darkMode ? 'darkeMode' : ''}`}>Procesando la información ... </p>
+                <p className={`${darkMode ? 'darkeMode' : ''}`}>Redirigiendo a Whatsapp ... </p>
             </Modal.Body>
             <ProgressBar animated now={100} className="mt-3" />;
         </Modal>

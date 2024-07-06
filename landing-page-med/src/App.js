@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import {ContextApp } from "./context/context";
 import {useHistoria} from "./hooks/useHistoria";
 import {useParches } from './hooks/useParches';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Landing } from "./views/Landing";
 import Global from "./routes/Global";
 
 function App() {

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import {Campo} from './Campo';
 import {ModalComponent} from './ModalComponent';
+import "../styles/stylesChatbot.css";
 
  export const InformacionUsuario = () => {
 
@@ -10,10 +10,11 @@ import {ModalComponent} from './ModalComponent';
 
     return (
         <div>
-            <h6>Enviar mensaje al chatbot</h6>
-            <div className = "button">
-                <button type="button" className="btn btn-primary" onClick={handleShow}>Preguntarle al chatbot</button>
-        </div>
+            <div className="chatbot">
+                <div className = "button">
+                    <button type="button" className="btn btn-secondary" onClick={handleShow}>Chatbot</button>
+                </div>
+            </div>
             <ModalComponent number={"15556216628"} showModal={showModal} path ="/" handleClose={handleClose}/>
         </div>
     );
